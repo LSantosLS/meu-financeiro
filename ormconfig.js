@@ -4,13 +4,13 @@ module.exports = {
   "url": process.env.DATABASE_URL,
   "entities": [
     `./${process.env.BASE_URL
-    }/modules /**/typeorm/entities/*{.ts,.js}`
+    }/modules/**/typeorm/entities/*{.ts,.js}`
   ],
   "migrations": [
-    `./${process.env.BASE_URL}/shared/typeorm/migrations/*{.ts,.js}`
+    `./${process.env.BASE_URL}/typeorm/migrations/*{.ts,.js}`
   ],
   "cli": {
-    "migrationsDir": "./src/shared/typeorm/migrations"
+    "migrationsDir": "./src/typeorm/migrations"
   },
 }
 
